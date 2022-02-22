@@ -19,6 +19,7 @@ while True:
 [tabuada]-entra na tabuada
 [portas]-ver portas aberta de ip
 [ip]-para ver ip do site
+[meu-ip]-mostra seu ip interno
 [desligar]-sair do programa  ''')
     time.sleep(4)
     os.system('clear')
