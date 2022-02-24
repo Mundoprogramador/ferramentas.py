@@ -60,18 +60,21 @@ while True:
                 print('•••'*10)
                 print('Porta Aberta ==>', porta)
                 print('•••'*10)
-                time.sleep(10)
+                time.sleep(2)
+                resultado =input('aperte entre para voltar inicio: ')
     if resposta == 'ip':
         site = input('nome do site .com: ')
         addr1 = socket.gethostbyname(site)
         print('==='*10) 
         print(addr1)
         print('==='*10)
-        time.sleep(10)
+        time.sleep(2)
+        resultado = input('aperte entre pra voltar inicio: ')
     if resposta == 'desligar':
        print('desligado')
        break
     elif resposta == 'meu-ip':
        ip_local = socket.gethostbyname(socket.gethostname()) 
        print(f'IP Local: {ip_local}')
-       time.sleep(10)
+       time.sleep(2)
+       resultado =input('aperte entre pra voltar inicio: ')
