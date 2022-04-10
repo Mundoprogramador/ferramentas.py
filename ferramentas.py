@@ -31,7 +31,6 @@ while True:
        curr_clock = time.strftime("%H:%M:%S", curr_time)
        print(curr_clock)
        print('==='*10)
-       res=input('aperta entre voltar: ')
     if resposta == 'date':
        x= datetime.datetime.now()
        print(x.year)
