@@ -21,22 +21,23 @@ while True:
 [ip]-para ver ip do site
 [meu-ip]-mostra seu ip interno
 [desligar]-sair do programa  ''')
-    time.sleep(4)
-    os.system('clear')
     os.system('pwd')
     print('==='*10)
     resposta=input('o que dejesa: ')
+    os.system('clear')
     print('==='*10)
     if resposta == 'hora':
        curr_time = time.localtime() 
        curr_clock = time.strftime("%H:%M:%S", curr_time)
        print(curr_clock)
        print('==='*10)
+    res=input('aperta entre voltar: ')
     if resposta == 'date':
        x= datetime.datetime.now()
        print(x.year)
        print(x.strftime("%A"))
        print('==='*10)
+    res=input('aperte entre voltar: ')
     if resposta == 'modulo':
        ferramenta = input('nome da ferramenta: ')
        pip.main(['install',ferramenta])
@@ -61,7 +62,7 @@ while True:
                 print('Porta Aberta ==>', porta)
                 print('•••'*10)
                 time.sleep(2)
-                resultado =input('aperte entre para voltar inicio: ')
+    resultado =input('aperte entre para voltar inicio: ')
     if resposta == 'ip':
         site = input('nome do site .com: ')
         addr1 = socket.gethostbyname(site)
@@ -69,7 +70,7 @@ while True:
         print(addr1)
         print('==='*10)
         time.sleep(2)
-        resultado = input('aperte entre pra voltar inicio: ')
+    resultado = input('aperte entre pra voltar inicio: ')
     if resposta == 'desligar':
        print('desligado')
        break
@@ -77,4 +78,4 @@ while True:
        ip_local = socket.gethostbyname(socket.gethostname()) 
        print(f'IP Local: {ip_local}')
        time.sleep(2)
-       resultado =input('aperte entre pra voltar inicio: ')
+    resultado =input('aperte entre pra voltar inicio: ')
