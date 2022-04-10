@@ -31,13 +31,13 @@ while True:
        curr_clock = time.strftime("%H:%M:%S", curr_time)
        print(curr_clock)
        print('==='*10)
-    res=input('aperta entre voltar: ')
+       res=input('aperta entre voltar: ')
     if resposta == 'date':
        x= datetime.datetime.now()
        print(x.year)
        print(x.strftime("%A"))
        print('==='*10)
-    res=input('aperte entre voltar: ')
+       res=input('aperte entre voltar: ')
     if resposta == 'modulo':
        ferramenta = input('nome da ferramenta: ')
        pip.main(['install',ferramenta])
@@ -70,7 +70,7 @@ while True:
         print(addr1)
         print('==='*10)
         time.sleep(2)
-    resultado = input('aperte entre pra voltar inicio: ')
+        resultado = input('aperte entre pra voltar inicio: ')
     if resposta == 'desligar':
        print('desligado')
        break
@@ -78,4 +78,4 @@ while True:
        ip_local = socket.gethostbyname(socket.gethostname()) 
        print(f'IP Local: {ip_local}')
        time.sleep(2)
-    resultado =input('aperte entre pra voltar inicio: ')
+       resultado =input('aperte entre pra voltar inicio: ')
