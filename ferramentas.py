@@ -60,7 +60,7 @@ while True:
                 print('Porta Aberta ==>', porta)
                 print('•••'*10)
                 time.sleep(2)
-    resultado =input('aperte entre para voltar inicio: ')
+    resultado =input('aperte entre para continuar: ')
     if resposta == 'ip':
         site = input('nome do site .com: ')
         addr1 = socket.gethostbyname(site)
